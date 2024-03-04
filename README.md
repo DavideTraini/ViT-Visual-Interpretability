@@ -26,7 +26,7 @@ In the **Usage_sample** file the user can modify the following parameters:
 **`device`**: device in which the model will be used; this can be _'cpu'_ or _'cuda:0'_;  
 
 ### Call Parameters
-**`min_cut`**: for each layer $L$, we delete the arcs with an attention value less than $min_cut*max(L)$, where $max(L)$ is the maximum value of attention for the layer L;  
+**`min_cut`**: for each layer $L$, we delete the arcs with an attention value less than $min_cut*max(L)$, where $max(L)$ is the maximum value of attention for the layer $L$;  
 **`token_ratio`**: percentage of patches which are set to 0 during the binary masks creation;  
 **`starting_layer`**: layer from which are calculated the metrics used to construct the masks;  
 **`img_path`**: path of the image we want to explain;  
