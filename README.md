@@ -10,8 +10,8 @@ This is the official implementation of the paper: ViT Visual Interpretability th
 
 This repository can be directly downloaded and executed locally. The required libraries are displayed in Section [Requirements](#requirements)
 
-We provide a file called **Usage_example.ipynb** where the user can run the cells and visualize insertion AUC, deletion AUC and heatmaps of one or more images. 
-The code can be used both for ViT and DeiT explaination. In addition, this repository contains the following python files:
+In the **Implementation** folder we provide a file called **Usage_example.ipynb** where the user can run the cells and visualize insertion AUC, deletion AUC and heatmaps of one or more images. 
+The code can be used both for ViT and DeiT explaination. In addition, this folder contains the following python files:
 - **utils**: contains some functions used for the visualization of AUCs and heatmaps.
 - **feature_extractor.py**: contains the definition of the feature extractor class used by ViT and DeiT models.
 - **hook.py**: contains the definition of the hook classes used by ViT and DeiT models.
@@ -28,7 +28,7 @@ In the **Usage_sample** file the user can modify the following parameters:
 **`device`**: device in which the model will be used; this can be _'cpu'_ or _'cuda:0'_;  
 
 ### Call Parameters
-**`min_cut`**: for each layer $L$, we delete the arcs with an attention value less than $min_cut*max(L)$, where $max(L)$ is the maximum value of attention for the layer $L$;  
+**`min_cut`**: for each layer $L$, we delete the arcs with an attention value less than $min\_cut*max(L)$, where $max(L)$ is the maximum value of attention for the layer $L$;  
 **`token_ratio`**: percentage of patches which are set to 0 during the binary masks creation;  
 **`starting_layer`**: layer from which are calculated the metrics used to construct the masks;  
 **`img_path`**: path of the image we want to explain;  
