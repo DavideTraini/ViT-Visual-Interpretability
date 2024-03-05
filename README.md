@@ -17,6 +17,8 @@ The code can be used both for ViT and DeiT explaination. In addition, this repos
 - **hook.py**: contains the definition of the hook classes used by ViT and DeiT models.
 - **mlex.py**: contains the implementation of the model described in the paper.
 
+The **imgs_idx** file contains the indexes of the images used for testing our approach.
+
 
 ## Parameters 
 In the **Usage_sample** file the user can modify the following parameters:
