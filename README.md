@@ -6,6 +6,13 @@ This is the official implementation of the paper: ViT Visual Interpretability th
 
 
 
+![Multilayer creation](./readme_imgs/Workflow_1.png)
+
+![Heatmap generation](./readme_imgs/Workflow_2.png)
+
+
+
+
 ## Usage
 
 This repository can be directly downloaded and executed locally. The required libraries are displayed in Section [Requirements](#requirements)
@@ -17,7 +24,7 @@ The code can be used both for ViT and DeiT explaination. In addition, this folde
 - **hook.py**: contains the definition of the hook classes used by ViT and DeiT models.
 - **mlex.py**: contains the implementation of the model described in the paper.
 
-The **imgs_idx** file contains the indexes of the images used for testing our approach.
+The **imgs_idx** file contains the indexes of the images used for testing our approach, which are selected from the [ImageNet 2012 validation dataset](https://image-net.org/challenges/LSVRC/2012/2012-downloads.php). You need to login and click on ILSVRC2012, after this download the 'Development kit (Task 1 & 2)', that contains the ground truth labels, and the 'Validation images (all tasks)'.
 
 
 ## Parameters 
@@ -28,7 +35,7 @@ In the **Usage_sample** file the user can modify the following parameters:
 **`device`**: device in which the model will be used; this can be _'cpu'_ or _'cuda:0'_;  
 
 ### Call Parameters
-**`min_cut`**: for each layer $L$, we delete the arcs with an attention value less than $min\_cut*max(L)$, where $max(L)$ is the maximum value of attention for the layer $L$;  
+**`min_cut`**: for each layer $L$, we delete the arcs with an attention value less than $min\\_cut*max(L)$, where $max(L)$ is the maximum value of attention for the layer $L$;  
 **`token_ratio`**: percentage of patches which are set to 0 during the binary masks creation;  
 **`starting_layer`**: layer from which are calculated the metrics used to construct the masks;  
 **`img_path`**: path of the image we want to explain;  
@@ -52,3 +59,7 @@ pandas=2.1.4
 matplotlib=3.8.2
 seaborn=0.13.1  
 ```
+
+## Citation
+
+If you use use this model for your research please cite our paper.
