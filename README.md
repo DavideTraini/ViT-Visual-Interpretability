@@ -5,11 +5,9 @@ This is the official implementation of the paper: Multiplex Network-Based Repres
 ## Abstract
 
 
+![Multilayer creation](./readme_imgs/Workflow_1.png)
 
-![Multilayer creation](./readme_imgs/Workflow_1.pdf)
-
-![Heatmap generation](./readme_imgs/Workflow_2.pdf)
-
+![Heatmap generation](./readme_imgs/Workflow_2.png)
 
 
 
