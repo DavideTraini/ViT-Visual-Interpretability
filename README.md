@@ -1,14 +1,14 @@
 # ViT-Visual-Interpretability
 
-This is the official implementation of the paper: ViT Visual Interpretability through Multilayer Network.
+This is the official implementation of the paper: Multiplex Network-Based Representation of Vision Transformers for Visual Explainability.
 
 ## Abstract
 
 
 
-![Multilayer creation](./readme_imgs/Workflow_1.png)
+![Multilayer creation](./readme_imgs/Workflow_1.pdf)
 
-![Heatmap generation](./readme_imgs/Workflow_2.png)
+![Heatmap generation](./readme_imgs/Workflow_2.pdf)
 
 
 
@@ -22,9 +22,9 @@ The code can be used both for ViT and DeiT explaination. In addition, this folde
 - **utils**: contains some functions used for the visualization of AUCs and heatmaps.
 - **feature_extractor.py**: contains the definition of the feature extractor class used by ViT and DeiT models.
 - **hook.py**: contains the definition of the hook classes used by ViT and DeiT models.
-- **mlex.py**: contains the implementation of the model described in the paper.
+- **mutex.py**: contains the implementation of the model described in the paper.
 
-The **imgs_idx** file contains the indexes of the images used for testing our approach, which are selected from the [ImageNet 2012 validation dataset](https://image-net.org/challenges/LSVRC/2012/2012-downloads.php). You need to login and click on ILSVRC2012, after this download the 'Development kit (Task 1 & 2)', that contains the ground truth labels, and the 'Validation images (all tasks)'.
+The **imgs_idx** file contains the indexes of the images used for testing our approach, which are selected from the ImageNet 2012 validation dataset. To download the dataset you need to login on [ImageNet site](https://image-net.org/challenges/LSVRC/2012/2012-downloads.php) and click on ILSVRC2012, after this download the 'Development kit (Task 1 & 2)', that contains the ground truth labels, and the 'Validation images (all tasks)'.
 
 
 ## Parameters 
@@ -62,4 +62,4 @@ seaborn=0.13.1
 
 ## Citation
 
-If you use use this model for your research please cite our paper.
+If you use this model for your research please cite our paper.

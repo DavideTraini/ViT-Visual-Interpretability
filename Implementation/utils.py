@@ -61,7 +61,7 @@ def plot_auc(scores, op, perc_ins):
 
 
 # Function to plot AUC for insertion and deletion metrics for multiple images
-def plot_auc_line(scores, perc, images, label_list, saliency_list, figsize_x = 10, figsize_y = 3, alpha=0.7):
+def plot_auc_line(scores, perc, images, label_list, saliency_list, title = 'AUC', figsize_x = 10, figsize_y = 3, alpha=0.7):
     """
     Args:
         scores (list): List of dictionaries containing insertion and deletion scores.
@@ -144,5 +144,5 @@ def plot_auc_line(scores, perc, images, label_list, saliency_list, figsize_x = 1
         axs[idx, 3].tick_params(axis='y', labelsize=8)
     
     plt.subplots_adjust(hspace=0.5, wspace=0.3)
-    fig.savefig(f'Auc.pdf', bbox_inches='tight')
+    fig.savefig(f'{title}.pdf', bbox_inches='tight')
     plt.show()

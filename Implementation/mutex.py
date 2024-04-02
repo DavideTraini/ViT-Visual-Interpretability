@@ -11,8 +11,8 @@ from hook import DEIT_Hook, VIT_Hook
 from feature_extractor import Custom_feature_extractor
 
 
-# Definition of the MLEx class
-class MLEx:
+# Definition of the MUTEX class
+class MUTEX:
 
     def __init__(self, model, device):
 
