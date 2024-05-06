@@ -242,12 +242,12 @@ class MUTEX:
         # Extract relevant layers based on the starting layer
         multilayer = multilayer[starting_layer:]
 
-        if centrality == 'out':
-            # Calculate out-degree centrality for each node in each layer
-            centrality_values = torch.sum(multilayer, dim=2)  # out-degree with shape (layers, number_nodes)
-        else:
+        if centrality == 'in':
             # Calculate in-degree centrality for each node in each layer
-            centrality_values = torch.sum(multilayer, dim=1)  # in-degree with shape (layers, number_nodes)
+            centrality_values = torch.sum(multilayer, dim=2)  # in-degree with shape (layers, number_nodes)
+        else:
+            # Calculate out-degree centrality for each node in each layer
+            centrality_values = torch.sum(multilayer, dim=1)  # out-degree with shape (layers, number_nodes)
 
         return centrality_values
 
